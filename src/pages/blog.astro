@@ -1,0 +1,563 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import EmailOptIn from '../components/EmailOptIn.astro';
+---
+
+<Layout title="Marketing Resources & Blog | Catalyst Digital Marketing" 
+       description="Expert marketing insights, guides, and resources to help grow your business. Download free templates and learn from industry experts.">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="pt-20 pb-16 bg-gradient-to-br from-primary-50 via-white to-secondary-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="animate-on-scroll">
+        <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          Marketing <span class="text-primary-600">Resources</span> & Insights
+        </h1>
+        <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          Expert insights, actionable guides, and free resources to help you grow your business. Learn from our team's experience helping 200+ companies achieve extraordinary growth.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Article -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-3xl p-8 lg:p-12 text-white animate-on-scroll">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="flex items-center mb-4">
+              <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">Featured Guide</span>
+              <span class="text-white/80 text-sm">Updated January 2024</span>
+            </div>
+            <h2 class="text-3xl font-bold mb-4">The Complete Guide to Digital Marketing ROI</h2>
+            <p class="text-lg text-white/90 mb-6">
+              Learn how to measure, track, and optimize your digital marketing ROI with our comprehensive 50-page guide. Includes templates, calculators, and real case studies.
+            </p>
+            <div class="flex items-center space-x-6 mb-6">
+              <div class="text-center">
+                <div class="text-2xl font-bold">50+</div>
+                <div class="text-sm text-white/80">Pages</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl font-bold">10+</div>
+                <div class="text-sm text-white/80">Templates</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl font-bold">5</div>
+                <div class="text-sm text-white/80">Case Studies</div>
+              </div>
+            </div>
+            
+            <!-- Email Collection Modal Trigger -->
+            <button class="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors" onclick="showEmailModal('roi-guide')">
+              Download Free Guide
+            </button>
+          </div>
+          <div class="relative">
+            <img src="https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                 alt="Digital Marketing ROI Guide" 
+                 class="rounded-2xl shadow-xl w-full h-80 object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resource Categories -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate-on-scroll">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Browse by Category</h2>
+        <p class="text-xl text-gray-600">Find the resources that match your current marketing challenges</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white rounded-2xl p-6 text-center animate-on-scroll hover:shadow-xl transition-all transform hover:-translate-y-2">
+          <div class="w-16 h-16 bg-primary-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Paid Advertising</h3>
+          <p class="text-gray-600 mb-4">Google Ads, Facebook Ads, and PPC optimization guides</p>
+          <span class="text-primary-600 font-semibold">12 Resources</span>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 text-center animate-on-scroll hover:shadow-xl transition-all transform hover:-translate-y-2">
+          <div class="w-16 h-16 bg-secondary-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">SEO & Content</h3>
+          <p class="text-gray-600 mb-4">Search optimization and content marketing strategies</p>
+          <span class="text-secondary-600 font-semibold">15 Resources</span>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 text-center animate-on-scroll hover:shadow-xl transition-all transform hover:-translate-y-2">
+          <div class="w-16 h-16 bg-accent-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Social Media</h3>
+          <p class="text-gray-600 mb-4">Social media marketing and community building</p>
+          <span class="text-accent-600 font-semibold">8 Resources</span>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 text-center animate-on-scroll hover:shadow-xl transition-all transform hover:-translate-y-2">
+          <div class="w-16 h-16 bg-primary-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Analytics</h3>
+          <p class="text-gray-600 mb-4">Measurement, tracking, and optimization guides</p>
+          <span class="text-primary-600 font-semibold">10 Resources</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Articles -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate-on-scroll">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Latest Articles</h2>
+        <p class="text-xl text-gray-600">Fresh insights and strategies from our marketing experts</p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8" id="articles-container">
+        <!-- Article 1 -->
+        <article class="bg-white border border-gray-200 rounded-2xl overflow-hidden animate-on-scroll hover:shadow-xl transition-all">
+          <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800" 
+               alt="Google Ads Strategy" 
+               class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <span class="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-sm font-semibold mr-3">Paid Ads</span>
+              <span class="text-gray-500 text-sm">5 min read</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">10 Google Ads Strategies That Actually Work in 2024</h3>
+            <p class="text-gray-600 mb-4">
+              Discover the latest Google Ads strategies that are driving results for our clients, including new campaign types and optimization techniques.
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" 
+                     alt="Marcus Rodriguez" 
+                     class="w-8 h-8 rounded-full mr-2 object-cover"
+                />
+                <span class="text-sm text-gray-600">Marcus Rodriguez</span>
+              </div>
+              <span class="text-sm text-gray-500">Jan 15, 2024</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="bg-white border border-gray-200 rounded-2xl overflow-hidden animate-on-scroll hover:shadow-xl transition-all">
+          <img src="https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=800" 
+               alt="SEO Content Strategy" 
+               class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <span class="bg-secondary-100 text-secondary-800 px-3 py-1 rounded-full text-sm font-semibold mr-3">SEO</span>
+              <span class="text-gray-500 text-sm">8 min read</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">The Content Strategy That Increased Organic Traffic by 580%</h3>
+            <p class="text-gray-600 mb-4">
+              Learn the exact content strategy we used to help EcoGear Co. achieve massive organic growth and dominate their industry keywords.
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" 
+                     alt="Emily Watson" 
+                     class="w-8 h-8 rounded-full mr-2 object-cover"
+                />
+                <span class="text-sm text-gray-600">Emily Watson</span>
+              </div>
+              <span class="text-sm text-gray-500">Jan 12, 2024</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="bg-white border border-gray-200 rounded-2xl overflow-hidden animate-on-scroll hover:shadow-xl transition-all">
+          <img src="https://images.pexels.com/photos/267371/pexels-photo-267371.jpeg?auto=compress&cs=tinysrgb&w=800" 
+               alt="Social Media Marketing" 
+               class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <span class="bg-accent-100 text-accent-800 px-3 py-1 rounded-full text-sm font-semibold mr-3">Social Media</span>
+              <span class="text-gray-500 text-sm">6 min read</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">How to Build a Social Media Strategy That Converts</h3>
+            <p class="text-gray-600 mb-4">
+              Stop posting random content. Learn how to create a social media strategy that actually drives business results and customer acquisition.
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" 
+                     alt="David Kim" 
+                     class="w-8 h-8 rounded-full mr-2 object-cover"
+                />
+                <span class="text-sm text-gray-600">David Kim</span>
+              </div>
+              <span class="text-sm text-gray-500">Jan 10, 2024</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="bg-white border border-gray-200 rounded-2xl overflow-hidden animate-on-scroll hover:shadow-xl transition-all hidden" data-article="4">
+          <img src="https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&w=800" 
+               alt="Marketing Analytics" 
+               class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <span class="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-sm font-semibold mr-3">Analytics</span>
+              <span class="text-gray-500 text-sm">7 min read</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Marketing Attribution: Track What Actually Drives Revenue</h3>
+            <p class="text-gray-600 mb-4">
+              Stop guessing which marketing channels work. Learn how to set up proper attribution tracking and measure true marketing ROI.
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <img src="https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" 
+                     alt="Alex Johnson" 
+                     class="w-8 h-8 rounded-full mr-2 object-cover"
+                />
+                <span class="text-sm text-gray-600">Alex Johnson</span>
+              </div>
+              <span class="text-sm text-gray-500">Jan 8, 2024</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="bg-white border border-gray-200 rounded-2xl overflow-hidden animate-on-scroll hover:shadow-xl transition-all hidden" data-article="5">
+          <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" 
+               alt="Landing Page Optimization" 
+               class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <span class="bg-secondary-100 text-secondary-800 px-3 py-1 rounded-full text-sm font-semibold mr-3">CRO</span>
+              <span class="text-gray-500 text-sm">9 min read</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Landing Page Optimization: 15 Elements That Boost Conversions</h3>
+            <p class="text-gray-600 mb-4">
+              Transform your landing pages into conversion machines with these 15 proven optimization techniques that increased our clients' conversion rates by 40%.
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" 
+                     alt="Lisa Thompson" 
+                     class="w-8 h-8 rounded-full mr-2 object-cover"
+                />
+                <span class="text-sm text-gray-600">Lisa Thompson</span>
+              </div>
+              <span class="text-sm text-gray-500">Jan 5, 2024</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 6 -->
+        <article class="bg-white border border-gray-200 rounded-2xl overflow-hidden animate-on-scroll hover:shadow-xl transition-all hidden" data-article="6">
+          <img src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800" 
+               alt="Marketing Strategy" 
+               class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <span class="bg-accent-100 text-accent-800 px-3 py-1 rounded-full text-sm font-semibold mr-3">Strategy</span>
+              <span class="text-gray-500 text-sm">10 min read</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Building a Marketing Strategy That Scales with Your Business</h3>
+            <p class="text-gray-600 mb-4">
+              Learn how to create a marketing strategy that grows with your business, from startup to enterprise, with frameworks used by our most successful clients.
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <img src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" 
+                     alt="Sarah Chen" 
+                     class="w-8 h-8 rounded-full mr-2 object-cover"
+                />
+                <span class="text-sm text-gray-600">Sarah Chen</span>
+              </div>
+              <span class="text-sm text-gray-500">Jan 3, 2024</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center mt-12 animate-on-scroll">
+        <button id="load-more-btn" class="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+          Load More Articles
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Resources -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate-on-scroll">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Free Marketing Resources</h2>
+        <p class="text-xl text-gray-600">Download our proven templates, checklists, and guides</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Resource 1 -->
+        <div class="bg-white rounded-2xl p-6 animate-on-scroll hover:shadow-xl transition-all">
+          <div class="w-16 h-16 bg-primary-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Marketing Audit Checklist</h3>
+          <p class="text-gray-600 mb-4">
+            Comprehensive 50-point checklist to audit your current marketing performance and identify growth opportunities.
+          </p>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-sm text-gray-500">PDF • 12 pages</span>
+            <span class="text-primary-600 font-semibold">Free</span>
+          </div>
+          <button class="w-full bg-primary-600 hover:bg-primary-700 text-white py-3 rounded-lg font-semibold transition-colors" onclick="showEmailModal('audit-checklist')">
+            Download Now
+          </button>
+        </div>
+
+        <!-- Resource 2 -->
+        <div class="bg-white rounded-2xl p-6 animate-on-scroll hover:shadow-xl transition-all">
+          <div class="w-16 h-16 bg-secondary-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">ROI Calculator Template</h3>
+          <p class="text-gray-600 mb-4">
+            Excel template to calculate and track your marketing ROI across all channels with built-in formulas and charts.
+          </p>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-sm text-gray-500">Excel • Template</span>
+            <span class="text-secondary-600 font-semibold">Free</span>
+          </div>
+          <button class="w-full bg-secondary-600 hover:bg-secondary-700 text-white py-3 rounded-lg font-semibold transition-colors" onclick="showEmailModal('roi-calculator')">
+            Download Now
+          </button>
+        </div>
+
+        <!-- Resource 3 -->
+        <div class="bg-white rounded-2xl p-6 animate-on-scroll hover:shadow-xl transition-all">
+          <div class="w-16 h-16 bg-accent-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Content Calendar Template</h3>
+          <p class="text-gray-600 mb-4">
+            12-month content calendar template with content ideas, posting schedules, and performance tracking.
+          </p>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-sm text-gray-500">Google Sheets</span>
+            <span class="text-accent-600 font-semibold">Free</span>
+          </div>
+          <button class="w-full bg-accent-600 hover:bg-accent-700 text-white py-3 rounded-lg font-semibold transition-colors" onclick="showEmailModal('content-calendar')">
+            Download Now
+          </button>
+        </div>
+
+        <!-- Resource 4 -->
+        <div class="bg-white rounded-2xl p-6 animate-on-scroll hover:shadow-xl transition-all">
+          <div class="w-16 h-16 bg-primary-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">PPC Campaign Planner</h3>
+          <p class="text-gray-600 mb-4">
+            Step-by-step planner for launching successful Google Ads and Facebook Ads campaigns with budget allocation guides.
+          </p>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-sm text-gray-500">PDF • 20 pages</span>
+            <span class="text-primary-600 font-semibold">Free</span>
+          </div>
+          <button class="w-full bg-primary-600 hover:bg-primary-700 text-white py-3 rounded-lg font-semibold transition-colors" onclick="showEmailModal('ppc-planner')">
+            Download Now
+          </button>
+        </div>
+
+        <!-- Resource 5 -->
+        <div class="bg-white rounded-2xl p-6 animate-on-scroll hover:shadow-xl transition-all">
+          <div class="w-16 h-16 bg-secondary-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">SEO Keyword Research Guide</h3>
+          <p class="text-gray-600 mb-4">
+            Complete guide to finding profitable keywords for your business with tools, techniques, and competitor analysis.
+          </p>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-sm text-gray-500">PDF • 25 pages</span>
+            <span class="text-secondary-600 font-semibold">Free</span>
+          </div>
+          <button class="w-full bg-secondary-600 hover:bg-secondary-700 text-white py-3 rounded-lg font-semibold transition-colors" onclick="showEmailModal('seo-guide')">
+            Download Now
+          </button>
+        </div>
+
+        <!-- Resource 6 -->
+        <div class="bg-white rounded-2xl p-6 animate-on-scroll hover:shadow-xl transition-all">
+          <div class="w-16 h-16 bg-accent-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Social Media Strategy Workbook</h3>
+          <p class="text-gray-600 mb-4">
+            Interactive workbook to develop your social media strategy with audience research, content planning, and growth tactics.
+          </p>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-sm text-gray-500">PDF • 30 pages</span>
+            <span class="text-accent-600 font-semibold">Free</span>
+          </div>
+          <button class="w-full bg-accent-600 hover:bg-accent-700 text-white py-3 rounded-lg font-semibold transition-colors" onclick="showEmailModal('social-workbook')">
+            Download Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <EmailOptIn 
+        variant="default"
+        title="Get Weekly Marketing Insights"
+        description="Join 5,000+ business owners getting actionable marketing strategies, case studies, and growth tips delivered to their inbox every Tuesday."
+        buttonText="Subscribe Now"
+      />
+    </div>
+  </section>
+
+  <!-- Email Collection Modal -->
+  <div id="email-modal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden">
+    <div class="bg-white p-8 rounded-2xl max-w-md mx-4 relative">
+      <button class="absolute top-4 right-4 text-gray-400 hover:text-gray-600" onclick="closeEmailModal()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+      
+      <div class="text-center mb-6">
+        <h3 class="text-2xl font-bold mb-2">Get Your Free Resource</h3>
+        <p class="text-gray-600 mb-4" id="modal-description">
+          Enter your email to download this valuable marketing resource instantly.
+        </p>
+        
+        <!-- Mailchimp Form -->
+        <form action="https://gmail.us18.list-manage.com/subscribe/post?u=f5bbbef1d38728bf4548298e4&id=04ea5ac68b&f_id=0081a6e6f0" method="post" target="_blank" class="validate" novalidate>
+          <div class="flex flex-col gap-3">
+            <input 
+              type="email" 
+              name="EMAIL"
+              placeholder="Enter your email address"
+              class="required email px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent"
+              required
+            />
+            <!-- Hidden honeypot field -->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_f5bbbef1d38728bf4548298e4_04ea5ac68b" tabindex="-1" value="">
+            </div>
+            <button 
+              type="submit"
+              name="subscribe"
+              class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 rounded-lg transition-colors"
+            >
+              Download Now
+            </button>
+          </div>
+        </form>
+        
+        <p class="text-xs text-gray-500 mt-3">
+          No spam. Unsubscribe anytime. By subscribing, you agree to our 
+          <a href="/privacy-policy" class="text-primary-600 hover:underline">Privacy Policy</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <Footer />
+</Layout>
+
+<script>
+  // Load more articles functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    let currentlyVisible = 3;
+    const totalArticles = 6;
+
+    loadMoreBtn?.addEventListener('click', () => {
+      const hiddenArticles = document.querySelectorAll('[data-article]');
+      let articlesToShow = Math.min(3, totalArticles - currentlyVisible);
+      
+      for (let i = 0; i < articlesToShow; i++) {
+        const article = hiddenArticles[i];
+        if (article) {
+          article.classList.remove('hidden');
+          currentlyVisible++;
+        }
+      }
+      
+      if (currentlyVisible >= totalArticles) {
+        loadMoreBtn.style.display = 'none';
+      }
+    });
+  });
+
+  // Email modal functionality
+  function showEmailModal(resourceId) {
+    const modal = document.getElementById('email-modal');
+    const description = document.getElementById('modal-description');
+    
+    // Customize description based on resource
+    const descriptions = {
+      'roi-guide': 'Get instant access to our comprehensive 50-page Digital Marketing ROI Guide with templates and case studies.',
+      'audit-checklist': 'Download our 50-point Marketing Audit Checklist to identify growth opportunities in your business.',
+      'roi-calculator': 'Get our Excel ROI Calculator Template with built-in formulas to track your marketing performance.',
+      'content-calendar': 'Download our 12-month Content Calendar Template with content ideas and posting schedules.',
+      'ppc-planner': 'Get our step-by-step PPC Campaign Planner for launching successful advertising campaigns.',
+      'seo-guide': 'Download our complete SEO Keyword Research Guide with tools and competitor analysis techniques.',
+      'social-workbook': 'Get our interactive Social Media Strategy Workbook for developing your social media plan.'
+    };
+    
+    description.textContent = descriptions[resourceId] || 'Enter your email to download this valuable marketing resource instantly.';
+    modal.classList.remove('hidden');
+  }
+
+  function closeEmailModal() {
+    const modal = document.getElementById('email-modal');
+    modal.classList.add('hidden');
+  }
+
+  // Close modal when clicking outside
+  document.getElementById('email-modal')?.addEventListener('click', (e) => {
+    if (e.target.id === 'email-modal') {
+      closeEmailModal();
+    }
+  });
+</script>

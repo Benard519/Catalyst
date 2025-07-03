@@ -1,0 +1,303 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import EmailOptIn from '../components/EmailOptIn.astro';
+---
+
+<Layout title="We Don't Just Market – We Drive Growth | Catalyst Digital Marketing">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="pt-20 pb-16 bg-gradient-to-br from-primary-50 via-white to-secondary-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="animate-on-scroll">
+          <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            We Don't Just Market –<br>
+            <span class="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+              We Drive Growth
+            </span>
+          </h1>
+          <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+            Transform your business with data-driven marketing strategies that deliver measurable results. 
+            We've helped 200+ companies increase revenue by 347% on average.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/contact" class="bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 text-center">
+              Book Strategy Call
+            </a>
+            <a href="/case-studies" class="border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all text-center">
+              View Case Studies
+            </a>
+          </div>
+        </div>
+        <div class="relative animate-on-scroll">
+          <div class="absolute inset-0 bg-gradient-to-r from-primary-600/20 to-secondary-600/20 rounded-3xl transform rotate-6"></div>
+          <img src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800" 
+               alt="Marketing Analytics Dashboard" 
+               class="relative rounded-3xl shadow-2xl w-full h-96 object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 animate-on-scroll">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Proven Results That Speak</h2>
+        <p class="text-xl text-gray-600">Our data-driven approach delivers consistent growth across all industries</p>
+      </div>
+      
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center animate-on-scroll">
+          <div class="text-4xl font-bold text-primary-600 mb-2">347%</div>
+          <div class="text-gray-600">Average Revenue Increase</div>
+        </div>
+        <div class="text-center animate-on-scroll">
+          <div class="text-4xl font-bold text-secondary-600 mb-2">200+</div>
+          <div class="text-gray-600">Companies Transformed</div>
+        </div>
+        <div class="text-center animate-on-scroll">
+          <div class="text-4xl font-bold text-accent-600 mb-2">$50M+</div>
+          <div class="text-gray-600">Revenue Generated</div>
+        </div>
+        <div class="text-center animate-on-scroll">
+          <div class="text-4xl font-bold text-primary-600 mb-2">95%</div>
+          <div class="text-gray-600">Client Retention Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate-on-scroll">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Services That Scale Your Business</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          From strategy to execution, we provide comprehensive digital marketing solutions tailored to your growth goals.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Digital Advertising -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2 animate-on-scroll">
+          <div class="w-16 h-16 bg-gradient-to-r from-primary-500 to-primary-600 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Digital Advertising</h3>
+          <p class="text-gray-600 mb-6">Google Ads, Facebook Ads, and LinkedIn campaigns that drive qualified leads and maximize ROI.</p>
+          <div class="flex justify-between items-center">
+            <span class="text-sm text-primary-600 font-semibold">Starting at $2,500/mo</span>
+            <a href="/services#digital-advertising" class="text-primary-600 hover:text-primary-700 font-semibold">Learn More →</a>
+          </div>
+        </div>
+
+        <!-- SEO & Content -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2 animate-on-scroll">
+          <div class="w-16 h-16 bg-gradient-to-r from-secondary-500 to-secondary-600 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">SEO & Content Marketing</h3>
+          <p class="text-gray-600 mb-6">Rank higher, attract more traffic, and convert visitors with strategic SEO and compelling content.</p>
+          <div class="flex justify-between items-center">
+            <span class="text-sm text-primary-600 font-semibold">Starting at $3,000/mo</span>
+            <a href="/services#seo-content" class="text-primary-600 hover:text-primary-700 font-semibold">Learn More →</a>
+          </div>
+        </div>
+
+        <!-- Social Media -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2 animate-on-scroll">
+          <div class="w-16 h-16 bg-gradient-to-r from-accent-500 to-accent-600 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Social Media Management</h3>
+          <p class="text-gray-600 mb-6">Build brand awareness and engage your audience across all major social platforms.</p>
+          <div class="flex justify-between items-center">
+            <span class="text-sm text-primary-600 font-semibold">Starting at $1,500/mo</span>
+            <a href="/services#social-media" class="text-primary-600 hover:text-primary-700 font-semibold">Learn More →</a>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2 animate-on-scroll">
+          <div class="w-16 h-16 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Web Development</h3>
+          <p class="text-gray-600 mb-6">High-converting websites and landing pages optimized for performance and user experience.</p>
+          <div class="flex justify-between items-center">
+            <span class="text-sm text-primary-600 font-semibold">Starting at $5,000</span>
+            <a href="/services#web-development" class="text-primary-600 hover:text-primary-700 font-semibold">Learn More →</a>
+          </div>
+        </div>
+
+        <!-- Analytics -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2 animate-on-scroll">
+          <div class="w-16 h-16 bg-gradient-to-r from-secondary-500 to-accent-500 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Analytics & Reporting</h3>
+          <p class="text-gray-600 mb-6">Comprehensive tracking and reporting to measure performance and optimize campaigns.</p>
+          <div class="flex justify-between items-center">
+            <span class="text-sm text-primary-600 font-semibold">Included in all plans</span>
+            <a href="/services#analytics" class="text-primary-600 hover:text-primary-700 font-semibold">Learn More →</a>
+          </div>
+        </div>
+
+        <!-- Consultation -->
+        <div class="bg-gradient-to-r from-primary-600 to-secondary-600 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2 animate-on-scroll text-white">
+          <div class="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Free Strategy Session</h3>
+          <p class="mb-6 text-white/90">Get a custom growth plan for your business. 30-minute consultation with our experts.</p>
+          <div class="flex justify-between items-center">
+            <span class="text-sm font-semibold">Completely Free</span>
+            <a href="/contact" class="bg-white text-primary-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">Book Now →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual Case Results -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate-on-scroll">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Success Stories That Inspire</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          See how we've helped businesses like yours achieve extraordinary growth through strategic digital marketing.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+        <!-- Case Study 1 -->
+        <div class="bg-gradient-to-br from-primary-50 to-white p-8 rounded-2xl shadow-lg animate-on-scroll">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center text-white font-bold text-lg mr-4">
+              T
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-900">TechStart Inc.</h3>
+              <p class="text-gray-600 text-sm">SaaS Company</p>
+            </div>
+          </div>
+          <div class="mb-6">
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-sm text-gray-600">Monthly Revenue</span>
+              <span class="text-lg font-bold text-primary-600">+420%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+              <div class="bg-primary-600 h-2 rounded-full" style="width: 85%"></div>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">
+            "Catalyst transformed our digital presence. We went from $50K to $260K MRR in just 8 months."
+          </p>
+          <a href="/case-studies" class="text-primary-600 hover:text-primary-700 font-semibold">Read Full Story →</a>
+        </div>
+
+        <!-- Case Study 2 -->
+        <div class="bg-gradient-to-br from-secondary-50 to-white p-8 rounded-2xl shadow-lg animate-on-scroll">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-secondary-600 rounded-lg flex items-center justify-center text-white font-bold text-lg mr-4">
+              E
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-900">EcoGear Co.</h3>
+              <p class="text-gray-600 text-sm">E-commerce</p>
+            </div>
+          </div>
+          <div class="mb-6">
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-sm text-gray-600">Organic Traffic</span>
+              <span class="text-lg font-bold text-secondary-600">+580%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+              <div class="bg-secondary-600 h-2 rounded-full" style="width: 92%"></div>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">
+            "Our SEO strategy increased organic traffic by 580% and tripled our online sales within 6 months."
+          </p>
+          <a href="/case-studies" class="text-secondary-600 hover:text-secondary-700 font-semibold">Read Full Story →</a>
+        </div>
+
+        <!-- Case Study 3 -->
+        <div class="bg-gradient-to-br from-accent-50 to-white p-8 rounded-2xl shadow-lg animate-on-scroll">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-accent-600 rounded-lg flex items-center justify-center text-white font-bold text-lg mr-4">
+              M
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-900">MediCare Plus</h3>
+              <p class="text-gray-600 text-sm">Healthcare</p>
+            </div>
+          </div>
+          <div class="mb-6">
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-sm text-gray-600">Lead Generation</span>
+              <span class="text-lg font-bold text-accent-600">+320%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+              <div class="bg-accent-600 h-2 rounded-full" style="width: 78%"></div>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">
+            "Our patient acquisition increased by 320% through targeted PPC campaigns and landing page optimization."
+          </p>
+          <a href="/case-studies" class="text-accent-600 hover:text-accent-700 font-semibold">Read Full Story →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gradient-to-r from-primary-600 to-secondary-600">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="animate-on-scroll text-white">
+        <h2 class="text-4xl font-bold mb-6">Ready to Transform Your Business?</h2>
+        <p class="text-xl mb-8 text-white/90">
+          Join 200+ companies that trust Catalyst to drive their growth. Book a free strategy session and discover your growth potential.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact" class="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all transform hover:scale-105">
+            Book Free Strategy Call
+          </a>
+          <a href="/pricing" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary-600 transition-all">
+            View Pricing Plans
+          </a>
+        </div>
+        <p class="text-sm mt-4 text-white/80">
+          No commitment required. 30-minute consultation with marketing experts.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Email Opt-in Popup -->
+  <EmailOptIn 
+    variant="popup"
+    title="Get Your Free Marketing Audit"
+    description="Discover untapped growth opportunities in your current marketing strategy. Get your complimentary audit report delivered to your inbox."
+    buttonText="Get Free Audit"
+  />
+
+  <Footer />
+</Layout>

@@ -1,0 +1,301 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="About Us | Catalyst Digital Marketing" 
+       description="Meet the team behind Catalyst Digital Marketing. Learn about our founder's story, our mission, and the experts driving growth for 200+ companies.">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="pt-20 pb-16 bg-gradient-to-br from-primary-50 via-white to-secondary-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="animate-on-scroll">
+        <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          The Team Behind Your <span class="text-primary-600">Growth</span>
+        </h1>
+        <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          We're not just another marketing agency. We're growth partners who've helped 200+ companies transform their digital presence and achieve extraordinary results.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founder Story -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="animate-on-scroll">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Founder's Story</h2>
+          <p class="text-lg text-gray-600 mb-6">
+            Catalyst Digital Marketing was born from a simple frustration: too many businesses were wasting money on marketing that didn't deliver results. After seeing countless companies struggle with agencies that promised the world but delivered mediocre outcomes, our founder Sarah Chen decided to build something different.
+          </p>
+          <p class="text-lg text-gray-600 mb-6">
+            With over 12 years of experience at Fortune 500 companies like Google and HubSpot, Sarah understood what truly drives growth. She assembled a team of specialists who shared her vision: marketing should be measurable, strategic, and focused on one thing – driving real business results.
+          </p>
+          <p class="text-lg text-gray-600 mb-8">
+            Today, Catalyst has helped over 200 companies increase their revenue by an average of 347%. We don't just create campaigns – we build growth engines that scale with your business.
+          </p>
+          <div class="flex items-center space-x-4">
+            <img src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" 
+                 alt="Sarah Chen, Founder" 
+                 class="w-16 h-16 rounded-full object-cover"
+            />
+            <div>
+              <h4 class="font-semibold text-gray-900">Sarah Chen</h4>
+              <p class="text-gray-600">Founder & CEO</p>
+            </div>
+          </div>
+        </div>
+        <div class="relative animate-on-scroll">
+          <div class="absolute inset-0 bg-gradient-to-r from-primary-600/20 to-secondary-600/20 rounded-3xl transform rotate-3"></div>
+          <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800" 
+               alt="Sarah Chen presenting at conference" 
+               class="relative rounded-3xl shadow-2xl w-full h-96 object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate-on-scroll">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Meet Our Expert Team</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Each team member brings specialized expertise and a proven track record of driving growth for businesses across industries.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Team Member 1 -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 text-center animate-on-scroll hover:shadow-xl transition-all transform hover:-translate-y-2">
+          <img src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" 
+               alt="Sarah Chen" 
+               class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+          />
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Sarah Chen</h3>
+          <p class="text-primary-600 font-semibold mb-3">Founder & CEO</p>
+          <p class="text-gray-600 mb-4">
+            12+ years at Google & HubSpot. Specializes in growth strategy and data-driven marketing. Led campaigns generating $50M+ in revenue.
+          </p>
+          <div class="flex justify-center space-x-3">
+            <a href="https://linkedin.com" class="text-gray-400 hover:text-primary-600 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com" class="text-gray-400 hover:text-primary-600 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 text-center animate-on-scroll hover:shadow-xl transition-all transform hover:-translate-y-2">
+          <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" 
+               alt="Marcus Rodriguez" 
+               class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+          />
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Marcus Rodriguez</h3>
+          <p class="text-secondary-600 font-semibold mb-3">Head of Paid Advertising</p>
+          <p class="text-gray-600 mb-4">
+            Google Ads & Facebook Ads certified expert. Managed $10M+ in ad spend with average ROAS of 4.2x across 100+ campaigns.
+          </p>
+          <div class="flex justify-center space-x-3">
+            <a href="https://linkedin.com" class="text-gray-400 hover:text-secondary-600 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com" class="text-gray-400 hover:text-secondary-600 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 text-center animate-on-scroll hover:shadow-xl transition-all transform hover:-translate-y-2">
+          <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" 
+               alt="Emily Watson" 
+               class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+          />
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Emily Watson</h3>
+          <p class="text-accent-600 font-semibold mb-3">SEO & Content Director</p>
+          <p class="text-gray-600 mb-4">
+            Former Moz consultant with 8+ years in SEO. Increased organic traffic by 500%+ for 50+ clients through strategic content marketing.
+          </p>
+          <div class="flex justify-center space-x-3">
+            <a href="https://linkedin.com" class="text-gray-400 hover:text-accent-600 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com" class="text-gray-400 hover:text-accent-600 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 text-center animate-on-scroll hover:shadow-xl transition-all transform hover:-translate-y-2">
+          <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" 
+               alt="David Kim" 
+               class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+          />
+          <h3 class="text-xl font-bold text-gray-900 mb-2">David Kim</h3>
+          <p class="text-primary-600 font-semibold mb-3">Social Media Strategist</p>
+          <p class="text-gray-600 mb-4">
+            Built social media presence for 100+ brands. Expertise in viral content creation and community building with 2M+ followers generated.
+          </p>
+          <div class="flex justify-center space-x-3">
+            <a href="https://linkedin.com" class="text-gray-400 hover:text-primary-600 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com" class="text-gray-400 hover:text-primary-600 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Team Member 5 -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 text-center animate-on-scroll hover:shadow-xl transition-all transform hover:-translate-y-2">
+          <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" 
+               alt="Lisa Thompson" 
+               class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+          />
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Lisa Thompson</h3>
+          <p class="text-secondary-600 font-semibold mb-3">Web Developer</p>
+          <p class="text-gray-600 mb-4">
+            Full-stack developer with 10+ years experience. Built 200+ high-converting websites with average 40% improvement in conversion rates.
+          </p>
+          <div class="flex justify-center space-x-3">
+            <a href="https://linkedin.com" class="text-gray-400 hover:text-secondary-600 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com" class="text-gray-400 hover:text-secondary-600 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Team Member 6 -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 text-center animate-on-scroll hover:shadow-xl transition-all transform hover:-translate-y-2">
+          <img src="https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" 
+               alt="Alex Johnson" 
+               class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+          />
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Alex Johnson</h3>
+          <p class="text-accent-600 font-semibold mb-3">Analytics Specialist</p>
+          <p class="text-gray-600 mb-4">
+            Google Analytics certified expert. Tracks and optimizes campaigns worth $25M+ with expertise in attribution modeling and conversion tracking.
+          </p>
+          <div class="flex justify-center space-x-3">
+            <a href="https://linkedin.com" class="text-gray-400 hover:text-accent-600 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com" class="text-gray-400 hover:text-accent-600 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Company Values -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate-on-scroll">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Core Values</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          These principles guide everything we do and ensure we deliver exceptional results for every client.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center animate-on-scroll">
+          <div class="w-16 h-16 bg-primary-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Results-Driven</h3>
+          <p class="text-gray-600">Every strategy, campaign, and decision is focused on delivering measurable business results that matter.</p>
+        </div>
+
+        <div class="text-center animate-on-scroll">
+          <div class="w-16 h-16 bg-secondary-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Transparency</h3>
+          <p class="text-gray-600">Complete visibility into our processes, performance, and pricing. No hidden fees or black-box strategies.</p>
+        </div>
+
+        <div class="text-center animate-on-scroll">
+          <div class="w-16 h-16 bg-accent-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Continuous Learning</h3>
+          <p class="text-gray-600">We stay ahead of industry trends and continuously optimize strategies based on data and insights.</p>
+        </div>
+
+        <div class="text-center animate-on-scroll">
+          <div class="w-16 h-16 bg-primary-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Partnership</h3>
+          <p class="text-gray-600">We're not just vendors – we're growth partners invested in your long-term success and business goals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gradient-to-r from-primary-600 to-secondary-600">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="animate-on-scroll text-white">
+        <h2 class="text-4xl font-bold mb-6">Ready to Work with Our Team?</h2>
+        <p class="text-xl mb-8 text-white/90">
+          Let's discuss how our expertise can drive growth for your business. Book a free strategy session with our team.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact" class="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all transform hover:scale-105">
+            Meet the Team
+          </a>
+          <a href="/case-studies" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary-600 transition-all">
+            See Our Work
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

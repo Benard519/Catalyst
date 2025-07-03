@@ -1,0 +1,132 @@
+---
+interface Props {
+  variant?: 'default' | 'minimal' | 'popup';
+  title?: string;
+  description?: string;
+  placeholder?: string;
+  buttonText?: string;
+}
+
+const { 
+  variant = 'default',
+  title = "Get Marketing Insights",
+  description = "Join 5,000+ business owners getting weekly growth strategies and market insights.",
+  placeholder = "Enter your email address",
+  buttonText = "Get Free Insights"
+} = Astro.props;
+---
+
+<div class={`email-opt-in ${variant === 'popup' ? 'fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden' : ''}`} id="email-optin">
+  <div class={`
+    ${variant === 'popup' ? 'bg-white p-8 rounded-2xl max-w-md mx-4 relative' : ''}
+    ${variant === 'minimal' ? 'max-w-md' : 'max-w-2xl'}
+  `}>
+    {variant === 'popup' && (
+      <button class="absolute top-4 right-4 text-gray-400 hover:text-gray-600" id="close-popup">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    )}
+    
+    <div class="text-center mb-6">
+      <h3 class={`font-bold mb-2 ${variant === 'minimal' ? 'text-lg' : 'text-2xl'}`}>
+        {title}
+      </h3>
+      <p class={`text-gray-600 mb-4 ${variant === 'minimal' ? 'text-sm' : 'text-base'}`}>
+        {description}
+      </p>
+      
+      <!-- Mailchimp Embedded Form -->
+      <form action="https://gmail.us18.list-manage.com/subscribe/post?u=f5bbbef1d38728bf4548298e4&id=04ea5ac68b&f_id=0081a6e6f0" method="post" target="_blank" class="validate email-signup-form" novalidate>
+        <div class={`flex ${variant === 'minimal' ? 'flex-col gap-2' : 'flex-col sm:flex-row gap-3'}`}>
+          <input 
+            type="email" 
+            name="EMAIL"
+            placeholder={placeholder}
+            class="required email flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-transparent"
+            required
+          />
+          <!-- Hidden honeypot field for bot protection -->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_f5bbbef1d38728bf4548298e4_04ea5ac68b" tabindex="-1" value="">
+          </div>
+          <button 
+            type="submit"
+            name="subscribe"
+            class={`bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg transition-colors ${variant === 'minimal' ? 'px-4 py-2' : 'px-6 py-3'}`}
+          >
+            {buttonText}
+          </button>
+        </div>
+        
+        <!-- Mailchimp response containers -->
+        <div id="mce-responses" class="clear foot">
+          <div class="response" id="mce-error-response" style="display: none;"></div>
+          <div class="response" id="mce-success-response" style="display: none;"></div>
+        </div>
+      </form>
+      
+      <p class="text-xs text-gray-500 mt-3">
+        No spam. Unsubscribe anytime. By subscribing, you agree to our 
+        <a href="/privacy-policy" class="text-primary-600 hover:underline">Privacy Policy</a>.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Mailchimp validation script -->
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script type="text/javascript">
+(function($) {
+  window.fnames = new Array(); 
+  window.ftypes = new Array();
+  fnames[0]='EMAIL';ftypes[0]='email';
+  fnames[1]='FNAME';ftypes[1]='text';
+  fnames[2]='LNAME';ftypes[2]='text';
+  fnames[3]='ADDRESS';ftypes[3]='address';
+  fnames[4]='PHONE';ftypes[4]='phone';
+  fnames[6]='COMPANY';ftypes[6]='text';
+}(jQuery));
+var $mcj = jQuery.noConflict(true);
+</script>
+
+<script>
+  // Email opt-in functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    // Popup functionality
+    const popup = document.getElementById('email-optin');
+    const closeBtn = document.getElementById('close-popup');
+    
+    // Show popup after 30 seconds or on scroll
+    let popupShown = localStorage.getItem('emailPopupShown');
+    
+    if (!popupShown && popup?.classList.contains('fixed')) {
+      setTimeout(() => {
+        popup.classList.remove('hidden');
+      }, 30000);
+      
+      // Show on scroll
+      let scrollTriggered = false;
+      window.addEventListener('scroll', () => {
+        if (!scrollTriggered && window.scrollY > window.innerHeight * 0.5) {
+          popup.classList.remove('hidden');
+          scrollTriggered = true;
+        }
+      });
+    }
+    
+    closeBtn?.addEventListener('click', () => {
+      popup.classList.add('hidden');
+      localStorage.setItem('emailPopupShown', 'true');
+    });
+    
+    // Close popup when clicking outside
+    popup?.addEventListener('click', (e) => {
+      if (e.target === popup) {
+        popup.classList.add('hidden');
+        localStorage.setItem('emailPopupShown', 'true');
+      }
+    });
+  });
+</script>
